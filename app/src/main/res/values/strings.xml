@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ITEOnlineShop</string>
+
+    <!--    bottom navigation title-->
+    <string name="txt_menu_home">Home</string>
+    <string name="txt_menu_product">Products</string>
+    <string name="txt_menu_profile">Profile</string>
+    <string name="txt_menu_more">More</string>
+
+    <!--    toolbar title-->
+    <string name="txt_frm_products">Products</string>
+    <string name="txt_frm_profile">My Profile</string>
+
+    <!--    fragment profile-->
+    <string name="txt_username">Uer Name</string>
+    <string name="txt_useremail">example@gmail.com</string>
+    <string name="txt_labelemail">Email</string>
+    <string name="txt_labelphone">Phone Number</string>
+    <string name="txt_labelgender">Gender</string>
+    <string name="txt_labelbirthday">Birthday</string>
+    <string name="txt_labeladdress">Address</string>
+    <string name="txt_valueemail">example@gmail.com</string>
+    <string name="txt_valuephone">093806375</string>
+    <string name="txt_valuegender">Male</string>
+    <string name="txt_valuebirthday">DD-MM-YYYY</string>
+    <string name="txt_valueaddress">Address</string>
+    <string name="btn_action_detail">btn action detail</string>
+    <string name="btn_action_edit">btn action edit</string>
+    <string name="txtWelcomeHome">Welcome :</string>
+    <string name="ic_action_notify">ic action notify</string>
+    <string name="ic_action_message">ic action message</string>
+    <string name="img_product">img product</string>
+    <string name="txt_labelCardView">50% off</string>
+    <string name="ic_action_order">ic action order</string>
+    <string name="txt_your_order">Your Order</string>
+    <string name="txt_extract">Get More</string>
+    <string name="txt_get_support">Get Support</string>
+    <string name="txt_history">History</string>
+    <string name="txt_thank_you">Thank you for Your Using Our Services</string>
+    <string name="txt_rate_my_app">Rate my app :</string>
+    <string name="img_product_detail">img product detail</string>
+    <string name="txt_order_now">Order Now</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/ic_action_home"
+        android:title="@string/txt_menu_home"/>
+    <item
+        android:id="@+id/menuProducts"
+        android:icon="@drawable/ic_action_product"
+        android:title="@string/txt_menu_product"/>
+    <item
+        android:id="@+id/menuProfile"
+        android:icon="@drawable/ic_action_profile"
+        android:title="@string/txt_menu_profile"/>
+    <item
+        android:id="@+id/menuMore"
+        android:icon="@drawable/ic_action_more"
+        android:title="@string/txt_menu_more"/>
+</menu>

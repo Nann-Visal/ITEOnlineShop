@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8c9ffe</color>
+    <color name="lavender30p">#308c9ffe</color>
+    <color name="blue_custom">#009FFF</color>
+    <color name="blue_custom50">#50009FFF</color>
+    <color name="orange_custom">#FDC830</color>
+    <color name="green30_custom">#99f2c8</color>
+</resources>

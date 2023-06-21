@@ -12,6 +12,15 @@ public class ModelProfiles {
     @SerializedName("image-url")
     private String image_url;
     private String birthday;
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public String getFirst_name() {
         return first_name;

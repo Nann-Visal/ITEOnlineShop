@@ -48,7 +48,7 @@ public class ProfileFragment extends Fragment {
 
         //create http-client
         Retrofit httpClient = new Retrofit.Builder()
-                .baseUrl("https://ferupp.s3.ap-southeast-1.amazonaws.com")
+                .baseUrl("https://raw.githubusercontent.com")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(new GsonBuilder().setLenient().create()))
                 .build();
@@ -80,7 +80,6 @@ public class ProfileFragment extends Fragment {
     //bind data
     public  void showModelProfile(ModelProfiles modelProfiles){
         String txtUserName = (modelProfiles.getFirst_name()+" "+modelProfiles.getLast_name());
-        String txtAddress  = ("Aaron Larson  123 Center Ln. Plymouth, MN 55441 United States");
 
         Picasso.get().load(modelProfiles.getImage_url()).into(binding.imgProfile);
         binding.txtUserName.setText(txtUserName);
@@ -89,6 +88,6 @@ public class ProfileFragment extends Fragment {
         binding.txtValuePhone.setText(modelProfiles.getPhone_number());
         binding.txtValueGender.setText(modelProfiles.getGender());
         binding.txtValueBirthday.setText(modelProfiles.getBirthday());
-        binding.txtValueAddress.setText(txtAddress);
+        binding.txtValueAddress.setText(modelProfiles.getAddress());
     }
 }

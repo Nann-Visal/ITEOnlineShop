@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ITEOnlineShop</string>
+
+    <!--    bottom navigation title-->
+    <string name="txt_menu_home">ហាង</string>
+    <string name="txt_menu_product">ផលិតផល</string>
+    <string name="txt_menu_profile">គណនី</string>
+    <string name="txt_menu_more">ផ្សេងៗ</string>
+
+    <!--    toolbar title-->
+    <string name="txt_frm_products">ផលិតផល</string>
+    <string name="txt_frm_profile">គណនី របស់ខ្ញំុ</string>
+
+    <!--    fragment profile-->
+    <string name="txt_username">Uer Name</string>
+    <string name="txt_useremail">example@gmail.com</string>
+    <string name="txt_labelemail">អ៊ីម៉ែល</string>
+    <string name="txt_labelphone">លេខទូរស័ព្ទ</string>
+    <string name="txt_labelgender">ភេទ</string>
+    <string name="txt_labelbirthday">ថ្ងៃកំណើត</string>
+    <string name="txt_labeladdress">អស័យហដ្ឋាន</string>
+    <string name="txt_valueemail">example@gmail.com</string>
+    <string name="txt_valuephone">093806375</string>
+    <string name="txt_valuegender">Male</string>
+    <string name="txt_valuebirthday">DD-MM-YYYY</string>
+    <string name="txt_valueaddress">Address</string>
+    <string name="btn_action_detail">btn action detail</string>
+    <string name="btn_action_edit">btn action edit</string>
+    <string name="txtWelcomeHome">សូមស្វាគមន៍ :</string>
+    <string name="ic_action_notify">ic action notify</string>
+    <string name="ic_action_message">ic action message</string>
+    <string name="img_product">img product</string>
+    <string name="txt_labelCardView">50% off</string>
+    <string name="ic_action_order">ic action order</string>
+    <string name="txt_your_order">ការកាម៉ង់</string>
+    <string name="txt_extract">ពង្រីកផ្សារ</string>
+    <string name="txt_get_support">ជំនួយ</string>
+    <string name="txt_history">ប្រវតិ្តប្រត្តិបត្រការ</string>
+    <string name="txt_thank_you">យើងខ្ញំុសូមអរគុណ ចំពោះការប្រើសេវាកម្មរបស់ពួកយើង</string>
+    <string name="txt_rate_my_app">វាយតម្លៃកម្មវិធី :</string>
+    <string name="img_product_detail">img product detail</string>
+    <string name="txt_order_now">ការម៉ង់</string>
+</resources>

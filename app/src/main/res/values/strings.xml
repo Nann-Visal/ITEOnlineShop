@@ -40,4 +40,14 @@
     <string name="txt_rate_my_app">Rate my app :</string>
     <string name="img_product_detail">img product detail</string>
     <string name="txt_order_now">Order Now</string>
+    <string name="img_action_rate">img action rate</string>
+    <string name="txt_edit_profile">Edit Profile</string>
+    <string name="ic_back_btn">ic back btn</string>
+    <string name="full_name">Full Name</string>
+    <string name="edit_full_name">Full Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="birthday">Birthday</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>

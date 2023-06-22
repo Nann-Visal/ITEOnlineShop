@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,6 +22,8 @@ import kh.edu.rupp.ite.onlineshop.api.model.ModelProducts;
 import kh.edu.rupp.ite.onlineshop.api.service.ServicesAPI;
 import kh.edu.rupp.ite.onlineshop.databinding.FragmentProductBinding;
 import kh.edu.rupp.ite.onlineshop.ui.adapter.ProductAdapter;
+import kh.edu.rupp.ite.onlineshop.ui.adapter.ProductAdapterHomeAll;
+import kh.edu.rupp.ite.onlineshop.ui.adapter.ProductAdapterii;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -64,7 +67,8 @@ public class ProductFragment extends Fragment {
             @Override
             public void onResponse(Call<List<ModelProducts>> call, Response<List<ModelProducts>> response) {
                 if(response.isSuccessful()){
-                    showModelProduct(response.body());
+//                    showModelProduct(response.body());
+                    showModelProductii(response.body());
                 }else{
                     Toast.makeText(getContext(),response.message(),Toast.LENGTH_LONG).show();
                 }
@@ -91,6 +95,16 @@ public class ProductFragment extends Fragment {
         binding.recyclerViewProducts.setAdapter(productAdapter);
     }
 
+    public void showModelProductii(List<ModelProducts> modelProducts){
+        //setup layout-manager
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),2);
+        binding.recyclerViewProducts.setLayoutManager(gridLayoutManager);
+
+        //setup adapter
+        ProductAdapterii productAdapterii = new ProductAdapterii();
+      productAdapterii.submitList(modelProducts);
+        binding.recyclerViewProducts.setAdapter(productAdapterii);
+    }
 
 
 }

@@ -1,6 +1,7 @@
 package kh.edu.rupp.ite.onlineshop.ui.fragment;
 
 import android.content.Intent;
+import android.content.IntentSender;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +21,7 @@ import java.util.Objects;
 import kh.edu.rupp.ite.onlineshop.api.model.ModelProfiles;
 import kh.edu.rupp.ite.onlineshop.api.service.ServicesAPI;
 import kh.edu.rupp.ite.onlineshop.databinding.FragmentProfileBinding;
+import kh.edu.rupp.ite.onlineshop.ui.activity.EditProfileActivty;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -33,6 +35,7 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentProfileBinding.inflate(inflater,container,false);
         Toolbar toolbar = (Toolbar) binding.toolBarProfileFragment;
+        showEditFragment();
         setHasOptionsMenu(true);
         return binding.getRoot();
     }
@@ -90,4 +93,18 @@ public class ProfileFragment extends Fragment {
         binding.txtValueBirthday.setText(modelProfiles.getBirthday());
         binding.txtValueAddress.setText(modelProfiles.getAddress());
     }
+
+    public void showEditFragment(){
+        binding.btnActionEdit.setOnClickListener(v->{
+            Intent intent = new Intent(v.getContext(), EditProfileActivty.class);
+            intent.putExtra("username",binding.txtUserName.getText());
+            intent.putExtra("useremail",binding.txtValueEmail.getText());
+            intent.putExtra("usergender",binding.txtValueGender.getText());
+            intent.putExtra("userbirthday",binding.txtValueBirthday.getText());
+            intent.putExtra("useraddress",binding.txtValueAddress.getText());
+
+            v.getContext().startActivity(intent);
+        });
+    }
+
 }
